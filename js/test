@@ -1,0 +1,47 @@
+function searchbyNRIC(){
+  var data1 = {  nama_penuh:"VERONICA KELINAH ANAK AMBROSE",
+                nric:"950807135678",
+                alamat:"RUMAH UCHAU,ULU TERU,95500 DEBAK, SARAWAK",
+                acc1:"1312941000074519",
+                bank1:"BSN",
+                acc2:"",
+                bank2:"",
+                plan_token:"100000",
+                plan_hangus:"50000"
+            }
+var data2 = {  nama_penuh:"VIKREN A/L RAJANDRAE",
+               nric:"911129045355",
+               alamat:"NO.93,JALAN INDAH BATU 14,KAMPONG PANCHOR 76100 DURIAN TUNGGAL, MELAKA",
+               acc1:"7026708876",
+               bank1:"CIMB",
+               acc2:"",
+               bank2:"",
+               plan_token:"60000",
+               plan_hangus:""
+                      }
+var data3 = {  nama_penuh:"WITHNEY ELLEN MARTIN",
+               nric:"970615125422",
+               alamat:"C5-1 KAMPUNG CONTOH SUANG PARAI, JALAN SULAMAN MENGATAL 88450 KOTA KINABALU,SABAH",
+               acc1:"7063069064",
+               bank1:"CIMB",
+               acc2:"",
+               bank2:"",
+               plan_token:"",
+               plan_hangus:"120000"
+                      }
+var data4 = {  nama_penuh:"ZAIPAH SAKINAH BINTI AB LATIF",
+               nric:"710519115178",
+               alamat:"02-05 KENARI A5,JALAN PULAI HARMONI 3, BANDAR BARU KANGKAR PULAI 81110 JOHOR BHARU",
+               acc1:"153106807599",
+               bank1:"MAYBANK",
+               acc2:"",
+               bank2:"",
+               plan_token:"90000",
+               plan_hangus:""
+                      }
+
+refDetails.push(data1);
+refDetails.push(data2);
+refDetails.push(data3);
+refDetails.push(data4);
+}

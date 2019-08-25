@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Carian Pengguna</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<!--script end -->
+
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">SEMAKAN UNTUK PENGGUNA</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Header -->
+    <header>
+
+        <div class="container">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+
+                <div class="main">
+
+
+                    <div>
+                        <!--  | Search NR-->
+                        <div class="alert alert-info alert-dismissable">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <strong>Selamat Datang!</strong> Sila masukkan nombor kad pengenalan dan klik <strong>"Semak"</strong>.
+                        </div>
+
+                        <div class="panel panel-default">
+
+                            <div class="panel-heading">
+                                <h3>Carian</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label>Nombor Kad Pengenalan</label>
+                                        <input type="text" class="form-control" id="id_pengguna" placeholder="No. kad pengenalan (tanpa ' - ' atau ' space ')">
+                                    </div>
+                                </form>
+                                <button type="submit" onclick="read_value()" class="btn btn-primary" data-toggle="tab" href="#displaySearchbyNRIC">SEMAK</button>
+
+                            </div>
+                        </div>
+
+                        <div class="tab-content">
+
+                            <!-- null -->
+                            <div id="cleartab" class="tab-pane fade in active"></div>
+
+                            <!-- search result -->
+                            <div id="displaySearchbyNRIC" class="tab-pane fade in">
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3>Maklumat Carian </h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <table class="table table-bordered text text-primary bg-light-gray" style="text-align: left;">
+                                                    <thead style="text-align: left;">
+                                                        <tr>
+                                                            <th colspan="2" style="background: burlywood;">MAKLUMAT PENGGUNA</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="tab_userdetails">
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" data-toggle="tab" href="#cleartab" onclick="clear_data()">Keluar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end tab content -->
+            </div>
+        </div>
+    </header>
+</body>
+
+
+<!-- footer -->
+<footer style="color :white;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <span class="copyright"><small>Copyright &copy; 2018</small></span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/agency.min.js"></script>
+
+<!-- MY CONNECTION -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="js/pengguna2.js"></script>
+
+
+</html>
